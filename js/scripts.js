@@ -27,13 +27,12 @@ function robogersSound(userNumber) {
 $(document).ready(function() {
     $("#number-form").submit(function(event) {
         event.preventDefault();
-        $("#number-form").show();
-
-
         const userNumber = parseInt($("input#userInput").val());
         let result = robogersSound(userNumber);
 
-        $("#result").text(result);
+
+        $("#number-form").show();
+        $("#result");
 
     });
 });
