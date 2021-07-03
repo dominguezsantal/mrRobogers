@@ -23,16 +23,15 @@ function robogersSound(userNumber) {
 
 }
 
-
 //UI
 $(document).ready(function() {
     $("#number-form").submit(function(event) {
         event.preventDefault();
         $("#number-form").show();
-        $("#name-form").hide();
+
 
         const userNumber = parseInt($("input#userInput").val());
-        let result = beepBoop(userNumber)
+        let result = robogersSound(userNumber);
 
         $("#result").text(result);
 
