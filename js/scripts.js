@@ -1,38 +1,33 @@
 //Business Logic
-
 function robogersSound(userNumber) {
-    let outputArray = [];
+    let numArray = [];
     for (let i = 0; i <= userNumber; i++) {
         if (i === 1) {
-            outputArray.push("Beep!");
+            numArray.push("Beep!");
         } else if (i === 2) {
-            outputArray.push("Boop!");
+            numArray.push("Boop!");
         } else if (i === 3) {
-            outputArray.push("Won't you be my neighbor ?");
+            numArray.push("Won't you be my neighbor?");
         } else if (i.toString().includes(3)) {
-            outputArray.push("Won't you be my neighbor?");
+            numArray.push("Won't you be my neighbor?");
         } else if (i.toString().includes(2)) {
-            outputArray.push("Boop!");
+            numArray.push("Boop!");
         } else if (i.toString().includes(1)) {
-            outputArray.push("Beep!");
+            numArray.push("Beep!");
         } else {
-            outputArray.push(i);
+            numArray.push(i);
         }
     }
-    return outputArray
-
+    return numArray
 }
 
-//UI
+//User Interface
 $(document).ready(function() {
-    $("#number-form").submit(function(event) {
+    $("form#number-form").submit(function(event) {
         event.preventDefault();
-        const userNumber = parseInt($("input#userInput").val());
-        let result = robogersSound(userNumber);
 
 
-        $("#number-form").show();
-        $("#result");
 
     });
+
 });
