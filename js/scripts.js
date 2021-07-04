@@ -26,8 +26,14 @@ $(document).ready(function() {
     $("#number-form").submit(function(event) {
         event.preventDefault();
 
+        const userNumber = $("input#userInput").val();
+        //console.log(userNumber);
+        let results = robogersSound(userNumber);
 
-        $("#number-form").toggle();
+        console.log(results);
+
+        $("robogersSound").show();
+        $("#number-form").show();
         $("#results").show();
     });
 
