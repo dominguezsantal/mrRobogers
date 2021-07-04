@@ -1,3 +1,11 @@
 #number-form {
     display: none;
 }
+
+body {
+    background-color: pink;
+}
+
+#results {
+    display: inline-block;
+}

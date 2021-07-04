@@ -23,11 +23,12 @@ function robogersSound(userNumber) {
 
 //User Interface
 $(document).ready(function() {
-    $("form#number-form").submit(function(event) {
+    $("#number-form").submit(function(event) {
         event.preventDefault();
 
 
-
+        $("#number-form").toggle();
+        $("#results").show();
     });
 
 });
