@@ -29,11 +29,10 @@ $(document).ready(function() {
         const userNumber = $("input#userInput").val();
         //console.log(userNumber);
         let results = robogersSound(userNumber);
-        console.log(results);
+        //console.log(results);
 
-        $("robogersSound").show();
-        $("#number-form").show();
-        $("#results").show();
+        $("#results").text(results.join(" "));
+
     });
 
 });
